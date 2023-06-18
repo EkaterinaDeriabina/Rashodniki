@@ -1,0 +1,9 @@
+version: '3' 
+services:
+  warehouse_bot:
+    image: warehouse_bot:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "443:443"
